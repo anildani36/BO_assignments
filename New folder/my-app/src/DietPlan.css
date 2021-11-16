@@ -1,0 +1,89 @@
+.dietplan {
+  background-color: white;
+  height: 40vw;
+}
+.title {
+  color: coral;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  /* background-color: black; */
+}
+.date {
+  margin-left: 10%;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.date1 {
+  background-color: #ddd;
+  height: 80vh;
+  width: 60vw;
+  margin-left: 15%;
+  padding-top: 10px;
+  /* display: grid; */
+}
+.plan {
+  /* display: flex; */
+  /* align-items: center; */
+  margin-left: 60%;
+  /* height: 10px; */
+  margin-top: 0;
+  /* padding-top: 20px; */
+  /* margin-bottom: 10%; */
+  /* margin-bottom: 30%; */
+  /* padding-bottom: 10%; */
+}
+.plan > .MuiSvgIcon-root {
+  margin-top: 0;
+}
+.title > button {
+  display: flex;
+  /* padding: 10px 10px 10px 10px; */
+  margin-left: 30%;
+  margin-top: 10%;
+  justify-content: space-evenly;
+}
+.middle {
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 200px;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  /* text-align: center; */
+  border: #ddd solid 2px;
+  border-radius: 35px;
+  box-sizing: border-box;
+  box-shadow: #dddd 2px 3px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
+}
+.middle > button {
+  border-radius: 10px;
+  height: 15%;
+  width: 30%;
+  border-color: orange;
+  color: orange;
+}
+.middle > .button > .MuiSvgIcon-root {
+  padding-bottom: 10px;
+  color: white;
+}
+.copy {
+  border-color: #ddd;
+}
+/* .copy > button {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  height: 8vh;
+  width: 20vw;
+  border-radius: 10px;
+  display: grid;
+  padding-top: 2px;
+} */

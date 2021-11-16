@@ -1,0 +1,63 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(152, 95, 160, 0.432);
+    padding-top: 300px;
+}
+.Female{
+    margin-top: 50px;
+    text-align: center;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid: auto / auto;
+    justify-content: center;
+}
+.a{
+    color: aqua;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  
+}
+h3{
+    padding: 12px;
+    margin: 20px;
+    justify-content: center;
+    
+}
+@media all and (min-width: 476px){
+    .Video-responsive-container {
+        max-width: 240px;
+        justify-content: center;
+    }
+}
+@media all and (min-width: 700px) {
+    .Video-responsive-container {
+      max-width: 472px;
+      justify-content: center;
+    }
+  }
+.Video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+  
+.Video-responsive-ReactPlayer {
+    left: 0;
+    top: 0;
+    height: 1000%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+}

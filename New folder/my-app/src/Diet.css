@@ -1,0 +1,95 @@
+.diet {
+  /* text-align: center; */
+  background-color: white;
+}
+.diet_title {
+  color: lightcoral;
+  /* margin-right: 10%; */
+  margin-left: 30%;
+  padding-top: 10px;
+}
+.breakfast {
+  background-color: #ddd;
+  padding-top: 10px;
+  margin-left: 300px;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  /* text-align: center; */
+  border: #ddd solid 2px;
+  border-radius: 35px;
+  box-sizing: border-box;
+  /* box-shadow: #dddd 2px 3px; */
+  /* justify-content: space-evenly; */
+  margin-top: 2%;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-bottom: 20px;
+  box-shadow: 0 5px 15px 0 gray;
+  /* z-index: 1;
+  transform: scale(0.8);
+  transition: all 0.1s ease-in-out; */
+  background-color: #ddd;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.breakfast1 {
+  margin-top: 0;
+  align-items: left;
+  margin-left: 70%;
+}
+.breakfast2 {
+  margin-right: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 20px;
+}
+.breakfast3 {
+  /* margin-right: 20%; */
+  margin-left: 30%;
+  /* font-size: 10px; */
+  width: 40vw;
+  height: 35px;
+}
+.breakfast:hover {
+  background-color: whitesmoke;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+/* .breakfast > .MuiSvgIcon-root {
+  /* display: grid; */
+/* align-items: center;
+  flex-direction: row;
+  color: rgb(119, 75, 75);
+  margin-left: 70%;
+  display: flex;
+  justify-content: space-around;
+} */
+.breakfast3 > img {
+  /* border-radius: 35px; */
+  margin-left: 10%;
+  margin-bottom: 80%;
+  height: 40px;
+  display: flex;
+  width: 10%;
+  margin-bottom: 3%;
+}
+/* .breakfast > span {
+  font-size: 15px;
+  margin-top: 5px;
+  /* display: grid; */
+/* margin-right: 20%;
+} */
+.breakfast > h4 {
+  /* margin-right: 60%; */
+  margin-left: 40px;
+  font-size: large;
+}
+/* .breakfast > select {
+  /* align-items: center; */
+/* display: flex;
+  margin-left: 50%; */
+/* margin-right: 10%; */
+/* } */

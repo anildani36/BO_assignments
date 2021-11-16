@@ -1,0 +1,67 @@
+/* .workout {
+  display: column;
+} */
+/* .body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(152, 95, 160, 0.432);
+  padding-top: 300px;
+} */
+
+/* * {
+  box-sizing: border-box;
+} */
+.workout3 {
+  font-size: 37px;
+  color: orange;
+}
+.workout5 {
+  font-size: 30px;
+  color: rgb(43, 226, 67);
+}
+.workout4 {
+  font-size: 40px;
+  color: white;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workout1,
+.workout2 {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border: #ddd solid 2px;
+  border-radius: 35px;
+  box-sizing: border-box;
+  outline: none;
+  color: #2d2d2d;
+  background-color: cadetblue;
+  margin: 15px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.workout {
+  background-image: url("./exersice.jpg");
+  text-align: center;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform-style: preserve-3d;
+  margin-bottom: 50%;
+}
+/*.Logo{
+    background-image: url(./logo.svg);
+    height: 10%;
+    width: 10%;
+    margin-top: 1px;
+    align-items: flex-start;
+}*/

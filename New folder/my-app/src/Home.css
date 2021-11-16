@@ -1,0 +1,102 @@
+.body {
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.logo_name {
+  margin-top: 20px;
+  padding-left: 10px;
+  text-align: center;
+}
+.home {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  margin: 0;
+}
+.home_first {
+  /* padding-right: -100px;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 120px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  height: 45px;
+}
+.home_first > img {
+  width: 75px;
+  object-fit: contain;
+  cursor: pointer;
+  /* align-items: center;
+   height: 30px */
+}
+.home_first1 {
+  width: 40px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+  display: flex;
+  padding-left: 200px;
+  font-size: 50px;
+  padding-bottom: 5px;
+}
+.home_first1 > span {
+  padding-left: -150px;
+  align-items: center;
+}
+.home_second {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.home_third {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.home_forth {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.home_five {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  align-items: center;
+}
+
+.home_six1 {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.home_six > button {
+  background-color: white;
+  border-radius: 35px;
+  width: 8vw;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px;
+  color: cadetblue;
+}
