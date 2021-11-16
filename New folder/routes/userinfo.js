@@ -5,6 +5,7 @@ const userinfo=require("../schema/userinfo");
 routes.use(express.json());
 routes.use(express.urlencoded({extended:false}));
 
+
 routes.post("/userinfo", async (req, res) => {
     try {
         // getting userinfo entered fields

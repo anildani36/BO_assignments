@@ -29,7 +29,7 @@ routes.post("/user/login", async (req, res) => {
         res.status(400).send("Invalid Email or Password");
     }
 });
-routes.post("/register", async (req, res) => {
+routes.post("/user/register", async (req, res) => {
     try {
         // getting user entered fields
         const registerUser = new Register({

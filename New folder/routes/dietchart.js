@@ -5,7 +5,6 @@ var fs = require('fs');
 const breakfasts=require("../schema/dietchart");
 routes.use(express.json());
 routes.use(express.urlencoded({extended:false}));
-const abc=require('../schema/data.js');
 const storage=multer.diskStorage({
     destination:function(req,file,cb){
         cb(null,'./uploads/');

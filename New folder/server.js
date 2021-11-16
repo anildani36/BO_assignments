@@ -16,13 +16,18 @@ const routes=require("./routes/register.js");
 const userinfo=require("./routes/userinfo.js");
 const breakfast=require("./routes/dietchart.js");
 
+var corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
 app.use("/",routes);
 app.use("/",userinfo);
 app.use("/",breakfast);
+app.use(cors());
 app.use(bodyparser.json({extended:true}));
 app.use(bodyparser.urlencoded({extended:true}));
-app.use(cors());
+app.use(cors(corsOptions));
 //defining port for server
 const port = process.env.PORT || 4000;
 
