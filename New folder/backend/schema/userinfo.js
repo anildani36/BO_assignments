@@ -22,6 +22,11 @@ const getinfo =new mongoose.Schema({
         required: true
        
     },
+    age:{
+        type: String,
+        required: true
+       
+    },
     Height:{
         type: String,
         required: true,

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Info.css";
+import { Link } from "react-router-dom";
 // import Main from "./Main";
 import { useHistory } from "react-router-dom";
 
@@ -9,16 +10,16 @@ export class Info extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: "",
+      FirstName: "",
       lastName: "",
-      gender: "",
+      Gender: "",
       age: "",
-      weight: "",
-      ideal: "",
-      height: "",
-      state: "",
-      city: "",
-      medicalIssue: "",
+      Weight: "",
+      IdealWeight: "",
+      Height: "",
+      State: "",
+      City: "",
+      Medical_Issue: "",
     };
   }
 
@@ -32,6 +33,7 @@ export class Info extends Component {
 
   handleSubmit = (e) => {
     console.log(this.state);
+    alert("User entered information sucessfully");
     this.getInfo();
     e.preventDefault();    
     this.resetForm();
@@ -49,31 +51,31 @@ export class Info extends Component {
 
   resetForm = () => {
     this.setState({
-      firstName: "",
+      FirstName: "",
       lastName: "",
-      gender: "",
+      Gender: "",
       age: "",
-      weight: "",
-      ideal: "",
-      height: "",
-      state: "",
-      city: "",
-      medicalIssue: "",
+      Weight: "",
+      IdealWeight: "",
+      Height: "",
+      State: "",
+      City: "",
+      Medical_Issue: "",
     });
   };
 
   render() {
     const {
-      firstName,
+      FirstName,
       lastName,
-      gender,
+      Gender,
       age,
-      weight,
-      ideal,
-      height,
-      state,
-      city,
-      medicalIssue,
+      Weight,
+      IdealWeight,
+      Height,
+      State,
+      City,
+      Medical_Issue,
     } = this.state;
     return (
       <div className="user_info">
@@ -89,8 +91,8 @@ export class Info extends Component {
             <input
               className="info1"
               type="text"
-              name="firstName"
-              value={firstName}
+              name="FirstName"
+              value={FirstName}
               onChange={this.handleChange}
               placeholder="FirstName"
             />
@@ -106,10 +108,10 @@ export class Info extends Component {
 
             <h5>Gender :</h5>
             <select
-              name="gender"
+              name="Gender"
               onChange={this.handleChange}
               defaultValue="Select Gender"
-              value={gender}
+              value={Gender}
             >
               <option defaultValue>Select Gender</option>
               <option value="male">Male</option>
@@ -127,8 +129,8 @@ export class Info extends Component {
             <input
               className="info1"
               type="number"
-              name="height"
-              value={height}
+              name="Height"
+              value={Height}
               onChange={this.handleChange}
             />
 
@@ -136,24 +138,24 @@ export class Info extends Component {
             <input
               className="info1"
               type="number"
-              name="weight"
-              value={weight}
+              name="Weight"
+              value={Weight}
               onChange={this.handleChange}
             />
             <h5>Ideal Weight</h5>
             <input
               className="info1"
               type="number"
-              name="ideal"
-              value={ideal}
+              name="IdealWeight"
+              value={IdealWeight}
               onChange={this.handleChange}
             />
             <h5>State</h5>
             <input
               className="info1"
               type="text"
-              name="state"
-              value={state}
+              name="State"
+              value={State}
               onChange={this.handleChange}
               placeholder="State"
             />
@@ -161,8 +163,8 @@ export class Info extends Component {
             <input
               className="info1"
               type="text"
-              name="city"
-              value={city}
+              name="City"
+              value={City}
               onChange={this.handleChange}
               placeholder="City"
             />
@@ -170,18 +172,19 @@ export class Info extends Component {
             <input
               className="info1"
               type="text"
-              name="medicalIssue"
-              value={medicalIssue}
+              name="Medical_Issue"
+              value={Medical_Issue}
               onChange={this.handleChange}
             />
             {/* </div> */}
 
             <p className="btn">
-              {/* <Link to="/main"> */}
+               <Link to="/premium"> 
     
-                <button className="info_btn" onClick={this.handleSubmit}>
+                <button className="info_btn"onClick={this.handleSubmit }>
                   Submit
                 </button>
+                 </Link> 
 
             </p>
           </form>

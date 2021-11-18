@@ -5,6 +5,7 @@ import SignUp from "./SignUp";
 import api from "axios";
 
 class Login extends Component {
+  //  history = useHistory();
   constructor(props) {
     super(props);
 
@@ -13,6 +14,9 @@ class Login extends Component {
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.props.history.push({
+      pathname: "/info"
+    });
   }
 
   emailhandler = (event) => {
@@ -28,11 +32,13 @@ class Login extends Component {
 
   handleSubmit = (event) => {
     console.log(this.state);
+    alert("login sucessfully");
     this.setState({
       email: "",
       password: "",
     });
-    this.loginInfo();
+     this.loginInfo();
+     
     event.preventDefault();
   };
 
@@ -76,14 +82,14 @@ class Login extends Component {
             placeholder="Password..."
           />
           <br />
-          <Link to={"/info"}>
+        {/* <Link to={"/info"}> */}
             <input
               className="login3"
               type="submit"
               value="Submit"
-              onClick={SignUp}
+              onClick={this.handleSubmit}
             />
-          </Link>
+          {/* </Link> */}
         </form>
         <div className="login_btn">
           <Link to="/SignUp">

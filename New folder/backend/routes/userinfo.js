@@ -13,6 +13,7 @@ routes.post("/userinfo", async (req, res) => {
             FirstName : req.body.FirstName,
             lastName : req.body.lastName,
             Gender : req.body. Gender,
+            age:req.body.age,
             Height : req.body. Height,
             Weight:  req.body.Weight,
             IdealWeight:  req.body.IdealWeight,

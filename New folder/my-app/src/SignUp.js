@@ -10,7 +10,7 @@ class SignUp extends Component {
     this.state = {
       name: "",
       email: "",
-      mobile: "",
+      Mobile: "",
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,7 +28,7 @@ class SignUp extends Component {
   };
   mobilehandler = (event) => {
     this.setState({
-      mobile: event.target.value,
+      Mobile: event.target.value,
     });
   };
   passwordhandler = (event) => {
@@ -39,10 +39,11 @@ class SignUp extends Component {
 
   handleSubmit = (event) => {
     console.log(this.state);
+    alert("registration sucessfull");
     this.setState({
       name: "",
       email: "",
-      mobile: "",
+      Mobile: "",
       password: "",
     });
     this.registerInfo();
@@ -93,7 +94,7 @@ class SignUp extends Component {
           <input
             className="login1"
             type="text"
-            value={this.state.mobile}
+            value={this.state.Mobile}
             onChange={this.mobilehandler}
             placeholder="Mobile No..."
           />

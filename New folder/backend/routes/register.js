@@ -33,10 +33,8 @@ routes.post("/user/register", async (req, res) => {
     try {
         // getting user entered fields
         const registerUser = new Register({
-            name : req.body.name,
+            name : req.body.name,       
             email : req.body.email,
-            
-           
             Mobile : req.body.Mobile,
             password : req.body.password
         })
