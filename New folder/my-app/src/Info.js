@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Info.css";
 import { Link } from "react-router-dom";
 // import Main from "./Main";
-import { useHistory } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import api from "./axios";
 
@@ -21,6 +21,11 @@ export class Info extends Component {
       City: "",
       Medical_Issue: "",
     };
+  }
+
+  redirect = () => {
+    const { history } = this.props;
+    if(history) history.push("/premium")
   }
 
   handleChange = (e) => {
@@ -43,6 +48,7 @@ export class Info extends Component {
     var data = await api.post("/userinfo", this.state)
       .then(res=> {
         console.log(res.data)
+        this.redirect();
       })
       .catch(error => {
         console.log(error)
